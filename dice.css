@@ -1,0 +1,90 @@
+:root {
+    --dice-child-point-bg: white;
+    
+}
+
+.container {
+    width: auto;
+    height: auto;
+}
+
+.container-wrapper {
+    display: flex;
+    width: 800px;
+    height: 800px;
+    margin: auto;
+}
+
+.container_dice {
+    gap: 90px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dice {
+    width: 160px;
+    height: 160px;
+    background-color: black;
+    padding: 15px;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+
+.dice:nth-child(5) .point:nth-child(1),
+.dice:nth-child(3) .point:nth-child(1),
+.dice:nth-child(1) .point {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-color: gold;
+}
+
+.dice:nth-child(6) .point:nth-child(2),
+.dice:nth-child(5) .point:nth-child(2),
+.dice:nth-child(4) .point:nth-child(2),
+.dice:nth-child(3) .point:nth-child(2),
+.dice:nth-child(2) .point:nth-child(2) {
+    grid-column-start: 3;
+    grid-row-start: 3;
+    background-color: tomato;
+}
+
+.dice:nth-child(6) .point:nth-child(3),
+.dice:nth-child(5) .point:nth-child(3),
+.dice:nth-child(4) .point:nth-child(3) {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    background-color: orange;
+}
+
+.dice:nth-child(6) .point:nth-child(4),
+.dice:nth-child(5) .point:nth-child(4),
+.dice:nth-child(4) .point:nth-child(4) {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    background-color: green;
+}
+
+
+.dice:nth-child(6) .point:nth-child(6) {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.dice:nth-child(6) .point:nth-child(5) {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.point {
+    width: 16px;
+    height: 16px;
+    background-color: var(--dice-child-point-bg);
+    border-radius: 50%;
+}
