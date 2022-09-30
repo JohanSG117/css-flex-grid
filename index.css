@@ -1,0 +1,21 @@
+/*  */
+
+
+.flex-child:nth-child(1) {
+    align-self: flex-start;
+}
+.flex-child:nth-child(2) {
+    align-self: flex-start;
+    justify-self: flex-end;
+    translate: 480px;
+}
+.flex-child:nth-child(3) {
+}
+.flex-child:nth-child(4) {
+    align-self: flex-end;
+    translate: -480px;
+}
+.flex-child:nth-child(5) {
+    align-self: flex-end;
+}
+
